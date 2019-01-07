@@ -1,0 +1,23 @@
+version: "3"
+services:
+  node1:
+    image: tiny-lisp-blockchain-node
+    environment:
+      APP_ENV: node1
+      PORT: "5001"
+    ports:
+      - "5001:5001"
+  node2:
+    image: tiny-lisp-blockchain-node
+    environment:
+      APP_ENV: node2
+      PORT: "5002"
+    ports:
+      - "5002:5002"
+  node3:
+    image: tiny-lisp-blockchain-node
+    environment:
+      APP_ENV: node3
+      PORT: "5003"
+    ports:
+      - "5003:5003"
